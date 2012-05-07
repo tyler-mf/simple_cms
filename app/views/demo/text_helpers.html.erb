@@ -1,0 +1,25 @@
+<% 
+text = "Если у Вас есть свой\n вариант решения той или иной задачи,\n\n то не стесняйтесь — добавляйте его к этой задаче по возможности соблюдая формат Если у Вас появились какие-то замечания по решению задачи, то не стесняйтесь — добавляйте его к этой задаче в соответствующее поле"
+%>
+
+<h2>word wrap</h2>
+<%= word_wrap(text, :line_width => 30) %>
+<hr />
+
+<h2>simple format</h2>
+<%= simple_format(text) %>
+<hr />
+
+<h2>simple format + word wrap</h2>
+<%= simple_format(word_wrap(text, :line_width => 30)) %>
+<hr />
+
+<h2>truncate</h2>
+<%= truncate(text, :length => 40, :omnission => "...") %>
+<hr />
+
+<h2>excerpt</h2>
+<%= excerpt(text, 'решения', :radius => 7, :omnission => "...")%>
+<hr />
+
+
