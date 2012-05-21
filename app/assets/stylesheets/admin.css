@@ -1,9 +1,28 @@
 /* admin stylesheet */
-/* loads after public.css */
+html { height: 100%; width: 100%; }
+body {width: 100%; min-width: 900px; height: 100%; margin: 0; padding: 0; font: 14px Verdana, Geneva, Arial, Helvetica, sans-serif; color: #332318; }
+p, td, ul, ol, li, dl, dt, dd { font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; }
+img { border: none; }
+table { border-collapse: collapse; }
+table tr th, table tr td { vertical-align: top; text-align: left; padding: 3px; }
+a { color: #0033CC; }
+a:hover {}
+.clear {clear: both; }
+
 
 /* Structure */
-#content { padding-left: 100px; padding-right: 100px; }
-#content h2 { width: 760px; text-align: center; }
+header { height: 4em; padding-top: 1em; text-align: center; background: #666666; color: #FFFFFF; }
+header h1 { margin: 0; padding: 0; }
+
+#main { min-height: 500px; background: #FFFFFF; }
+
+nav { float: left; width: 180px; min-height: 480px; padding: 10px; background: #CCCCCC; color: #000000; }
+
+footer { clear: both; height: 2.5em; text-align: right; background: #666666; color: #FFFFFF; }
+footer p { margin: 0; padding: 0.5em 1em; }
+
+#content { margin: 0 auto; width: 900px; }
+#content h2 { text-align: center; }
 
 .login form { margin: 100px 250px; }
 .menu .identity {text-align: center; }
@@ -23,19 +42,20 @@ a.action:hover { background: #B6D491; }
 
 /* CRUD */
 .notice { height: 1.25em; padding: 0.5em; text-align: center; background: #B6D491; color: #4C2516; }
-.back-link { font-size: 0.8em; margin-bottom: 1em; }
+.back-link {float: left; padding: 2px 5px; margin-top: 1em; background: #0033CC; color: #FFFFFF; border: 1px solid #4C2516; text-decoration: none; font-size: 0.8em; text-align: center; }
 .form-buttons { text-align: center; margin: 1em 0; }
 
 .list table { clear: both; width: 100%;}
 .list table tr td { border: 1px solid #666666; }
-.show table { clear: both; margin: 0 200px; width: 300px; }
+.show table { clear: both; margin: 0 200px; width: auto; }
 .show table.wide { width: 600px; margin: 0 50px; }
 .show table tr th { white-space: nowrap; padding-right: 5px; }
 .show table tr td { border: 1px solid #666666; }
 .edit table, .new table { margin: 0 auto; }
 
-.odd { background: #E5CE69; }
+.odd { background: #CCCCCC; }
 .even { background: none; }
+
 
 .section + .section { padding-top: 0.5em; margin-top: 0.5em; border-top: 1px dotted #666666; }
 

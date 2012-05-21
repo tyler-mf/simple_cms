@@ -2,14 +2,14 @@
 <html>
 <head>
   <title>SimpleCms | <%= @page_title || 'Admin Area' %></title>
-  <%= stylesheet_link_tag    "public", "admin", :media => "all" %>
+  <%= stylesheet_link_tag "admin", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-<div id="header">
+<header>
 	<h1>Simple CMS Admin</h1>
-</div>
+</header>
 <div id="main">
 	<% if !flash[:notice].blank? %>
 	<div class="notice">
@@ -20,9 +20,8 @@
 		<%= yield %>
 	</div>
 </div>
-<div id="footer">
+<footer>
 	<p>&copy; tyler_mf </p>
-</div>
-
+</footer>
 </body>
 </html>

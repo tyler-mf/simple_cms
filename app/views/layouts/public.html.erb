@@ -6,20 +6,20 @@
   <%= stylesheet_link_tag('public') %>
 </head>
 <body>
-<div id="header">
+<header>
 	<h1>Simple CMS</h1>
-</div>
+</header>
 <div id="main">
-	<div id="navigation">
+	<nav>
 		<%= render(:partial => 'layouts/navigation', :locals => {:subjects => @subjects}) %>
-	</div>
+	</nav>
 	<div id="content">
 		<%= yield %>
 	</div>
 	<div class="clear"></div>
 </div>
-<div id="footer">
+<footer>
 	<p>copyright</p>
-</div>
+</footer>
 </body>
 </html>

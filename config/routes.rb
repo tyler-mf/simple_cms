@@ -1,9 +1,13 @@
 SimpleCms::Application.routes.draw do 
   
+  mount Ckeditor::Engine => '/ckeditor'
+
   root :to => "public#index"
   
   match 'admin', :to => 'access#menu'
   match 'show/:id', :to => 'public#show'
+  
+  mount Ckeditor::Engine => "/ckeditor"
   
   # get "demo/index"
 

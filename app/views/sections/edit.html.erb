@@ -1,7 +1,7 @@
 <% @page_title = "Section Edit"%>
 
   <%= link_to("<< Back to list", {:action => 'list', :page_id => @page.id}, :class => 'back-link')%>
-  
+  <%= javascript_include_tag "ckeditor/init" %>
   <div class="section edit">
   	<h2>Update Section</h2>
   	<%= form_for(:section, :url => {:action => 'update', :id => @section.id, :page_id => @page.id}) do |f| %>

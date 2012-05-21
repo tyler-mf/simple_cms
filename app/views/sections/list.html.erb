@@ -1,8 +1,8 @@
 <% @page_title = "Sections List"%>
 
-<%= link_to("<< Back to list of pages", {:controller => 'pages', :action => 'list'}, :class => 'back-link') %>
+<%= link_to("<< Back to list of pages", {:controller => 'pages', :action => 'list', :subject_id => @page.subject_id}, :class => 'back-link') %>
 
-<div class="sections_list">
+<div class="sections list">
 	<h2>Sections</h2>
 	<%= link_to("Add new section", {:action => 'new', :page_id => @page.id}) %>
 	<table class="listing" summary="Sections list">
